@@ -1,0 +1,20 @@
+.App {
+  text-align: center;
+}
+#modulo{
+  margin-top: 3%;
+}
+#titulo
+{
+  padding: 4%;
+  background-color: rgb(21, 125, 167);
+  color: #FFFFFF;
+}
+#form-registrar
+{
+  margin-top: 5%;
+}
+#tabla-consulta
+{
+  margin-top: 4%;
+}
