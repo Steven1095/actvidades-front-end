@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const inicio = () => {
   return (
     <div>
-      <h1 id='titulo'>Módulo de registro y Consulta de actividades de los empleado</h1>    
+      <h1 id='titulo'>Módulo de registro y Consulta de actividades de los empleados</h1>    
       <div id='modulo' className="container text-center">
         <div className="row">
           <div className="col-sm-6 mb-3 mb-sm-0">

@@ -3,6 +3,18 @@ import { Link } from 'react-router-dom'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const navbar = () => {
+  function vista_inicio()
+  {
+    window.location = "/"
+  }
+  function vista_registro()
+  {
+    window.location = "/registrar"
+  }
+  function vista_consulta()
+  {
+    window.location = "/consultar"
+  }
   return (
     <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -14,13 +26,13 @@ const navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav mx-auto">
                     <li className="nav-item">
-                    <Link className="nav-link" to="/vistas/inicio">Inicivcdo</Link>
+                    <a class="btn btn-primary" onClick={vista_inicio} role="button">Inicio</a>
                     </li>
                     <li className="nav-item">
-                    <Link className="nav-link" to="/vistas/registrar">Registrar actividad</Link>
+                    <Link className="nav-link" onClick={vista_registro}>Registrar actividad</Link>
                     </li>
                     <li className="nav-item">
-                    <Link className="nav-link" to="/vistas/consultar">Consultar</Link>
+                    <Link className="nav-link" onClick={vista_consulta}>Consultar</Link>
                     </li>
                 </ul>
                 </div>

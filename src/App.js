@@ -3,9 +3,9 @@ import './App.css';
 // import { Register } from './components/register';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navegacion/navbar';
-import Inicio from './components/vistas/inicio';
 import Consultar from './components/vistas/consultar';
 import Registrar from './components/vistas/registrar';
+import Inicio from './components/vistas/inicio';
 
 function App() {
   return (
@@ -13,9 +13,9 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/vistas/inicio'element={<Inicio />}/>
-          <Route path='/vistas/consultar'element={<Consultar />}/>
-          <Route path='/vistas/registrar'element={<Registrar />}/>
+          <Route path='/'element={<Inicio />}/>
+          <Route path='/consultar'element={<Consultar />}/>
+          <Route path='/registrar'element={<Registrar />}/>
         </Routes>
       </Router>
     </div>
